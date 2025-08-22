@@ -1,4 +1,4 @@
-import { ArrowDown, Download, MapPin } from "lucide-react";
+import { ArrowDown, MapPin } from "lucide-react";
 import { Button } from "./ui/button";
 
 const HeroSection = () => {
@@ -27,7 +27,7 @@ const HeroSection = () => {
 
           {/* Main Heading */}
           <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold mb-6">
-            Hi, I'm <span className="text-gradient">Pedro Costa</span>
+            Hi, I&apos;m <span className="text-gradient">Pedro Costa</span>
           </h1>
 
           {/* Subtitle */}
@@ -43,15 +43,15 @@ const HeroSection = () => {
             </span>{" "}
             and{" "}
             <span className="text-primary font-semibold">cybersecurity</span>.
-            Dean's List student with expertise in full-stack development, AI,
-            and IoT. Currently conducting undergraduate research.
+            Dean&apos;s List student with expertise in full-stack development,
+            AI, and IoT. Currently conducting undergraduate research.
           </p>
 
           {/* Academic Achievement Badge */}
           <div className="mt-16 inline-flex items-center space-x-4 text-sm text-muted-foreground">
             <div className="flex items-center space-x-2">
               <div className="w-2 h-2 bg-primary rounded-full"></div>
-              <span>Dean's List</span>
+              <span>Dean&apos;s List</span>
             </div>
             <div className="flex items-center space-x-2">
               <div className="w-2 h-2 bg-primary rounded-full"></div>

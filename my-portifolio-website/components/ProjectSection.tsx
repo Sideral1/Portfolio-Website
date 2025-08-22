@@ -1,6 +1,5 @@
-import { ExternalLink, Github, Server, Brain, Network } from "lucide-react";
+import { Server, Brain, Network } from "lucide-react";
 import { Card } from "./ui/card";
-import { Button } from "./ui/button";
 
 const ProjectsSection = () => {
   const projects = [
