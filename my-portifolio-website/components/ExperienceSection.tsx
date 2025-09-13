@@ -56,7 +56,7 @@ const ExperienceSection = () => {
       ],
     },
     {
-      title: "Cybersecurity Trainee",
+      title: "Cybersecurity Analyst",
       company: "Vortex Security",
       location: "Rio de Janeiro, Brazil",
       period: "Apr. 2024 – Aug. 2024",
