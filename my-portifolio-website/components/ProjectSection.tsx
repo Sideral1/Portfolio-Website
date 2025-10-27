@@ -6,30 +6,30 @@ const ProjectsSection = () => {
     {
       title: "MCP Server",
       description:
-        "A containerized architecture for large language models featuring an asynchronous backend with authentication and a scalable frontend. Implemented AI orchestration for seamless model management.",
+        "A backend platform enabling large language models to interact with personal tools like calendar and email, automating day-to-day activities through asynchronous processing and secure integration.",
       longDescription:
-        "Built a comprehensive containerized solution for managing large language models with advanced authentication, real-time processing, and AI orchestration capabilities.",
+        "Developed a containerized backend system that allows large language models to automate personal workflows by connecting securely with calendar and email services. Implemented real-time AI orchestration, robust authentication, and scalable infrastructure to support seamless task automation.",
       icon: Server,
       technologies: [
         "Spring Boot",
         "MySQL",
         "Docker",
-        "React",
-        "Next.js",
         "Java",
-        "TypeScript",
+        "Python",
+        "Langchain",
+        "Langgraph",
+        "Langsmith",
+        "Embedded Database",
       ],
       features: [
+        "AI integration with calendar and email",
         "Asynchronous backend architecture",
         "JWT-based authentication system",
         "Docker containerization",
-        "AI model orchestration",
-        "Scalable React frontend",
+        "AI model orchestration for task automation",
         "RESTful API design",
       ],
-      github: "https://github.com/Siderall/mcp-server",
-      demo: "#",
-      category: "Full-Stack",
+      category: "Backend",
     },
     {
       title: "Tennis AI",
@@ -55,8 +55,6 @@ const ProjectsSection = () => {
         "Match outcome prediction",
         "Performance metrics evaluation",
       ],
-      github: "https://github.com/Sideral1/tennis-ai",
-      demo: "#",
       category: "Machine Learning",
     },
     {
@@ -82,8 +80,6 @@ const ProjectsSection = () => {
         "Cisco router and switch configuration",
         "Network monitoring and management",
       ],
-      github: "https://github.com/Siderall/network-architecture",
-      demo: "#",
       category: "Networking",
     },
   ];
