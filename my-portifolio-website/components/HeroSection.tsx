@@ -43,9 +43,9 @@ const HeroSection = () => {
             </span>{" "}
             and{" "}
             <span className="text-primary font-semibold">cybersecurity</span>.
-            Dean&apos;s List student (GPA: 3.97/4.33) with expertise in
-            full-stack development, AI, and IoT. Currently conducting
-            undergraduate research.
+            Dean&apos;s List student (GPA: 3.95/4.33) with expertise in
+            full-stack development, AI, and IoT. Software Engineer Intern at
+            Magna International.
           </p>
 
           {/* Academic Achievement Badge */}

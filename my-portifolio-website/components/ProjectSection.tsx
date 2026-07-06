@@ -1,8 +1,73 @@
-import { Server, Brain, Network } from "lucide-react";
+import { Server, Brain, Network, Workflow, FileSpreadsheet, ExternalLink, LucideIcon } from "lucide-react";
 import { Card } from "./ui/card";
 
+interface Project {
+  title: string;
+  link?: string;
+  description: string;
+  longDescription: string;
+  icon: LucideIcon;
+  technologies: string[];
+  features: string[];
+  category: string;
+}
+
 const ProjectsSection = () => {
-  const projects = [
+  const projects: Project[] = [
+    {
+      title: "NuvoHub",
+      link: "https://www.nuvo-hub.com/",
+      description:
+        "A modular, AI-powered automation platform that connects everyday tools like email, calendar, and messaging into one unified workspace, automating repetitive tasks through natural-language commands with no coding required.",
+      longDescription:
+        "NuvoHub lets users customize an AI agent to automate repetitive tasks through simple natural-language commands. It emphasizes security, transparency, and flexibility, making workflow automation accessible for professionals, teams, and businesses.",
+      icon: Workflow,
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "React",
+        "AI Agents",
+        "Automation",
+        "OAuth2",
+        "Tailwind CSS",
+      ],
+      features: [
+        "No-code natural-language automation",
+        "Unified workspace for email, calendar & messaging",
+        "Customizable AI agents",
+        "Security and transparency focused",
+        "Modular integrations",
+        "Built for professionals, teams & businesses",
+      ],
+      category: "AI Automation",
+    },
+    {
+      title: "Structify",
+      link: "https://structured-data-converter.vercel.app/",
+      description:
+        "An AI-powered platform that transforms unstructured documents into clean, structured data with a simple natural-language prompt, delivering organized results in formats like CSV, JSON, Excel, or SQL.",
+      longDescription:
+        "Structify lets users upload files, describe the information they need, and instantly receive organized results. It eliminates manual data entry, templates, and coding for both business users and developers.",
+      icon: FileSpreadsheet,
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "React",
+        "AI",
+        "Data Extraction",
+        "Vercel",
+        "Tailwind CSS",
+      ],
+      features: [
+        "Natural-language data extraction",
+        "Exports to CSV, JSON, Excel & SQL",
+        "Instant structured results from any document",
+        "No templates or coding required",
+        "Eliminates manual data entry",
+        "Built for business users and developers",
+      ],
+      category: "AI Data",
+    },
     {
       title: "MCP Server",
       description:
@@ -120,6 +185,17 @@ const ProjectsSection = () => {
                       </span>
                     </div>
                   </div>
+                  {project.link && (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`Visit ${project.title}`}
+                      className="p-2 rounded-lg text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors"
+                    >
+                      <ExternalLink size={20} />
+                    </a>
+                  )}
                 </div>
 
                 {/* Description */}

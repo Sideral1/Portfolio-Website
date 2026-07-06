@@ -4,10 +4,34 @@ import { Card } from "@/components/ui/card";
 const ExperienceSection = () => {
   const experiences = [
     {
+      title: "Software Engineer Intern",
+      company: "Magna International",
+      location: "Toronto, Canada",
+      period: "Jan. 2026 – Apr. 2026",
+      type: "Internship",
+      description:
+        "Developed engineering automations and internal tooling to accelerate and secure production workflows.",
+      responsibilities: [
+        "Re-engineered a high-performance system from an existing vendor solution, reducing execution time from 10 minutes to 1 minute while optimizing limited third-party software licenses for efficient resource utilization.",
+        "Built a custom message broker to coordinate distributed tasks with reliability and controlled resource usage.",
+        "Created CI/CD pipelines on Azure for automated testing and deployment across multiple applications.",
+        "Configured security features for in-house virtual machines, improving system hardening and reliability.",
+      ],
+      technologies: [
+        "Python",
+        "Azure",
+        "CI/CD",
+        "Distributed Systems",
+        "Automation",
+        "Virtualization",
+        "Security",
+      ],
+    },
+    {
       title: "Undergraduate Research Program",
       company: "Thompson Rivers University",
       location: "Kamloops, BC",
-      period: "Jan. 2025 – Present",
+      period: "Jan. 2025 – Jan. 2026",
       type: "Research",
       description:
         "Researching security solutions for automotive networks under faculty supervision.",
